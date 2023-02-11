@@ -1,0 +1,28 @@
+---
+# tasks file for docker_engine
+
+- name: Remove the old Docker packages if any
+  ansible.builtin.apt:
+    name: "{{ docker_remove }}"
+    state: absent
+
+- name: Install the prerequisite packages
+  ansible.builtin.apt:
+    name: "{{ docker_prerquisites }}"
+    state: present
+
+- name: Download and add the APT key
+  ansible.builtin.apt_key:
+    url: " {{ docker_gpg_url }}"
+
+- name: Add the Docker repository to the system
+  ansible.builtin.apt_repository:
+    repo: "{{ docker_apt_repo }}"
+    filename: docker-engine
+    state: present
+  notify: Update the package repo db cache
+
+- name: Install the Docker packages
+  ansible.builtin.apt:
+    name: "{{ docker_install_packages }}"
+    state: present

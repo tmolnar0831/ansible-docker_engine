@@ -1,0 +1,24 @@
+---
+# defaults file for docker_engine
+
+docker_remove:
+  - docker_engine
+  - docker
+  - docker.io
+  - containerd
+  - runc
+
+docker_prerquisites:
+  - ca-certificates
+  - gnupg
+
+docker_gpg_url: https://download.docker.com/linux/debian/gpg
+
+docker_apt_repo: deb https://download.docker.com/linux/debian bullseye stable
+
+docker_install_packages:
+  - docker-ce
+  - docker-ce-cli
+  - containerd.io
+  - docker-buildx-plugin
+  - docker-compose-plugin
