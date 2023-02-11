@@ -6,7 +6,7 @@ A simple Ansible role that installs the Docker Engine on Debian Linux
 Requirements
 ------------
 
-This role tries to be as simple as it is possible. The only requirement is an installed Ansible to use it.
+This role tries to be as simple as it is possible. The only requirement is an installed Ansible 2.9+ to use it.
 
 Role Variables
 --------------
