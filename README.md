@@ -1,7 +1,7 @@
 docker_engine
 =========
 
-A simple role that installs the Docker Engine on Debian Linux
+A simple Ansible role that installs the Docker Engine on Debian Linux
 
 Requirements
 ------------
