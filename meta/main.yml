@@ -16,5 +16,4 @@ galaxy_info:
   galaxy_tags: 
     - "docker"
     - "debian"
-    - "docker-engine"
     - "simple"
