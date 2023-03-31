@@ -13,6 +13,7 @@ Role Variables
 
 Every variable here has default values handled in the "defaults". The role is written for Debian Bullseye.
 
+```
 docker_remove:
   - docker_engine
   - docker
@@ -34,6 +35,7 @@ docker_install_packages:
   - containerd.io
   - docker-buildx-plugin
   - docker-compose-plugin
+  ```
 
 Dependencies
 ------------
