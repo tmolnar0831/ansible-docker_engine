@@ -1,19 +1,20 @@
 galaxy_info:
   author: Tamas Molnar <tmolnar0831@gmail.com>
-  description: A simple role to install the Docker Engine on Debian Linux
+  description: A simple role to install Docker Engine on Debian Linux
   company: Tom's IT Cafe
 
   license: MIT
 
-  min_ansible_version: '2.1'
+  min_ansible_version: "2.1"
 
   platforms:
     - name: Debian
       versions:
         - "buster"
         - "bullseye"
+        - "bookworm"
 
-  galaxy_tags: 
+  galaxy_tags:
     - "docker"
     - "debian"
     - "simple"

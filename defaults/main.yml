@@ -14,7 +14,7 @@ docker_prerquisites:
 
 docker_gpg_url: https://download.docker.com/linux/debian/gpg
 
-docker_apt_repo: deb https://download.docker.com/linux/debian bullseye stable
+docker_apt_repo: deb https://download.docker.com/linux/debian bookworm stable
 
 docker_install_packages:
   - docker-ce

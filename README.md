@@ -1,17 +1,17 @@
 docker_engine
 =========
 
-A simple Ansible role that installs the Docker Engine on Debian Linux
+This is a simple Ansible role that installs Docker Engine on Debian Linux
 
 Requirements
 ------------
 
-This role tries to be as simple as it is possible. The only requirement is an installed Ansible 2.9+ to use it.
+This role is very simple. The only requirement is Ansible.
 
 Role Variables
 --------------
 
-Every variable here has default values handled in the "defaults". The role is written for Debian Bullseye.
+All variablea here have default values handled in the "defaults".
 
 ```
 docker_remove:
@@ -27,7 +27,7 @@ docker_prerquisites:
 
 docker_gpg_url: https://download.docker.com/linux/debian/gpg
 
-docker_apt_repo: deb https://download.docker.com/linux/debian bullseye stable
+docker_apt_repo: deb https://download.docker.com/linux/debian bookworm stable
 
 docker_install_packages:
   - docker-ce
@@ -40,14 +40,14 @@ docker_install_packages:
 Dependencies
 ------------
 
-This role tries to be as simple as it is possible. The only requirement is an installed Ansible to use it.
+- ansible
 
 Example Playbook
 ----------------
 
 Just include it in the roles and all set.
 
-    - hosts: all
+    - hosts: docker
       roles:
          - role: docker_engine
 
