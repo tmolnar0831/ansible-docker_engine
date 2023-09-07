@@ -1,17 +1,18 @@
-docker_engine
-=========
+# docker_engine
 
-This is a simple Ansible role that installs Docker Engine on Debian Linux
+This is a simple Ansible role that installs the Docker Engine on Debian Linux.
 
-Requirements
-------------
+## Requirements
 
-This role is very simple. The only requirement is Ansible.
+This role is very simple. The only requirements are
 
-Role Variables
---------------
+- Debian Linux
+- ansible
+- root access on the target host
 
-All variablea here have default values handled in the "defaults".
+## Role Variables
+
+All variablea here have default values handled in the ```defaults``` file.
 
 ```
 docker_remove:
@@ -37,13 +38,11 @@ docker_install_packages:
   - docker-compose-plugin
   ```
 
-Dependencies
-------------
+## Dependencies
 
-- ansible
+- ansible >= 2.10
 
-Example Playbook
-----------------
+## Example Playbook
 
 Just include it in the roles and all set.
 
@@ -51,12 +50,10 @@ Just include it in the roles and all set.
       roles:
          - role: docker_engine
 
-License
--------
+## License
 
 MIT
 
-Author Information
-------------------
+## Author Information
 
 Tamas Molnar - <tmolnar0831@gmail.com> - https://tomsitcafe.com
