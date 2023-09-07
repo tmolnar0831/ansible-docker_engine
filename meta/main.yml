@@ -3,9 +3,9 @@ galaxy_info:
   description: A simple role to install Docker Engine on Debian Linux
   company: Tom's IT Cafe
 
-  license: MIT
+  license: MITan
 
-  min_ansible_version: "2.1"
+  min_ansible_version: "2.10"
 
   platforms:
     - name: Debian
