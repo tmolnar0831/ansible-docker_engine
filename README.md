@@ -4,10 +4,8 @@ This is a simple Ansible role that installs the Docker Engine on Debian Linux.
 
 ## Requirements
 
-This role is very simple. The only requirements are
-
 - Debian Linux
-- ansible
+- Ansible
 - root access on the target host
 
 ## Role Variables
