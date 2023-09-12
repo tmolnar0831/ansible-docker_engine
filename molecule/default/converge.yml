@@ -1,0 +1,9 @@
+---
+- name: Converge
+  hosts: molecule
+  gather_facts: false
+  tasks:
+    - name: Test the role with the defaults
+      ansible.builtin.include_role:
+        name: docker_engine
+        tasks_from: main.yml
