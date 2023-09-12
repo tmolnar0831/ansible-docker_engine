@@ -6,7 +6,7 @@ dependency:
     requirements-file: requirements.yml
 platforms:
   - name: ansible-debian12-test
-    image: tmolnar-debian:1.3
+    image: tmolnar-debian:1.4
     command: /sbin/init
     tmpfs:
       - /run
