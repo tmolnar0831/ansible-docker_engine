@@ -10,9 +10,13 @@ This is a simple Ansible role that installs the Docker Engine on Debian Linux.
 
 ## Role Variables
 
-All variablea here have default values handled in the ```defaults``` file.
-
+```yaml
+docker_user: tmolnar
 ```
+
+All further variablea here have default values handled in the ```defaults``` file.
+
+```yaml
 docker_remove:
   - docker_engine
   - docker
@@ -44,9 +48,11 @@ docker_install_packages:
 
 Just include it in the roles and all set.
 
+```yaml
     - hosts: docker
       roles:
          - role: docker_engine
+```
 
 ## License
 
@@ -54,4 +60,4 @@ MIT
 
 ## Author Information
 
-Tamas Molnar - <tmolnar0831@gmail.com> - https://tomsitcafe.com
+Tamas Molnar - <tmolnar0831@gmail.com> - <https://tomsitcafe.com>
